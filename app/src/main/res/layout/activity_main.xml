@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    android:backgroundTint="#23314E"
+    android:foregroundTint="#EBEAE8"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="374dp"
+        android:layout_height="433dp"
+        android:layout_marginTop="16dp"
+        android:background="#23314E"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="208dp" />
+
+        <EditText
+            android:id="@+id/emaileditTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EBEAE8"
+            android:drawableTint="#EBEAE8"
+            android:ems="40"
+            android:foregroundTint="#EBEAE8"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:shadowColor="#EBEAE8"
+            android:textColor="#F1F1F1"
+            android:textColorHint="#F1F1F1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/contraseñaeditTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F1F1F1"
+            android:drawableTint="#F1F1F1"
+            android:ems="10"
+            android:foregroundTint="#F1F1F1"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            android:scrollbarSize="48dp"
+            android:shadowColor="#F1F1F1"
+            android:textColor="#F1F1F1"
+            android:textColorHint="#F1F1F1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="184dp"
+                android:layout_height="42dp"
+                android:backgroundTint="#90BF4B"
+                android:onClick="inRegistrar"
+                android:text="registrar" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="184dp"
+                android:layout_height="41dp"
+                android:backgroundTint="#90BF4B"
+                android:onClick="inIniciar"
+                android:text="Acceder" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="81dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#23314E"
+        android:scaleType="centerInside"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="91dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="532dp"
+        android:backgroundTint="#FEFEFE"
+        android:scaleType="centerInside"
+        android:tint="#23314E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/google_mas__1_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
