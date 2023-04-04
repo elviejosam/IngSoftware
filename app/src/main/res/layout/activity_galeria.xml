@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Galeria">
+    
+    <ImageSwitcher
+        android:id="@+id/imageis"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+    
+    <Button
+        android:id="@+id/btAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anterior"
+        android:layout_below="@id/imageis"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/btSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="siguiente"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/imageis"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/btPickImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sube fotos"
+        android:layout_alignParentBottom="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+
+
+</RelativeLayout>

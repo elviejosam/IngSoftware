@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.proyecto2.Galeria;
 import com.example.proyecto2.fotito;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +27,7 @@ import com.example.proyecto2.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment{
     Button btCamara;
+    Button btGalery;
     ImageView mirafoto;
     Uri image_uri;
     private static final int PERMISSION_CODE = 1000;
@@ -35,9 +38,6 @@ public class GalleryFragment extends Fragment{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -51,11 +51,20 @@ public class GalleryFragment extends Fragment{
         View view = inflater.inflate(R.layout.fragment_gallery, container,false);
 
         btCamara = view.findViewById(R.id.btCamara);
+        btGalery = view.findViewById(R.id.btGalery);
 
         btCamara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), fotito.class);
+                startActivity(intent);
+            }
+        });
+
+        btGalery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Galeria.class);
                 startActivity(intent);
             }
         });
