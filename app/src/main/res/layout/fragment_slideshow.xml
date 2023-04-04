@@ -7,6 +7,14 @@
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
         android:id="@+id/text_slideshow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,4 +27,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/_abf0310a4d248354d7cae2dc24c6961"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button_news"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:text="Noticias"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="316dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
