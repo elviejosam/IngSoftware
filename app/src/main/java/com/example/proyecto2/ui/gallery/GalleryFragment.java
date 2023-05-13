@@ -1,7 +1,5 @@
 package com.example.proyecto2.ui.gallery;
 
-
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -35,6 +33,7 @@ public class GalleryFragment extends Fragment{
 
     private FragmentGalleryBinding binding;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,13 +63,14 @@ public class GalleryFragment extends Fragment{
         btGalery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Galeria.class);
-                startActivity(intent);
+                Intent intenti = new Intent(getActivity(), Galeria.class);
+                startActivity(intenti);
             }
         });
 
+
         //final TextView textView = binding.textGallery;
-       // galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return view;
 
     }
