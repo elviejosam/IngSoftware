@@ -22,4 +22,14 @@
         android:name="com.example.proyecto2.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_videos"
+        android:name="com.example.proyecto2.ui.video.capVid"
+        android:label="@string/menu_videos"
+        tools:layout="@layout/activity_cap" />
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.example.proyecto2.ui.quiz.QuizFragment"
+        android:label="@string/menu_videos"
+        tools:layout="@layout/fragment_quiz" />
 </navigation>

@@ -1,7 +1,5 @@
 package com.example.proyecto2.ui.gallery;
 
-
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.proyecto2.Galeria;
 import com.example.proyecto2.fotito;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +25,7 @@ import com.example.proyecto2.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment{
     Button btCamara;
+    Button btGalery;
     ImageView mirafoto;
     Uri image_uri;
     private static final int PERMISSION_CODE = 1000;
@@ -32,12 +33,10 @@ public class GalleryFragment extends Fragment{
 
     private FragmentGalleryBinding binding;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -51,6 +50,7 @@ public class GalleryFragment extends Fragment{
         View view = inflater.inflate(R.layout.fragment_gallery, container,false);
 
         btCamara = view.findViewById(R.id.btCamara);
+        btGalery = view.findViewById(R.id.btGalery);
 
         btCamara.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,8 +60,17 @@ public class GalleryFragment extends Fragment{
             }
         });
 
+        btGalery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenti = new Intent(getActivity(), Galeria.class);
+                startActivity(intenti);
+            }
+        });
+
+
         //final TextView textView = binding.textGallery;
-       // galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return view;
 
     }
